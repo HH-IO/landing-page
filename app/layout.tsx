@@ -46,6 +46,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/path/to/microsoft-favicon.ico" />
+      </head>
       <body className={`${spaceGrotesk.variable} ${spaceMono.variable} ${outfit.variable} ${inter.variable} font-sans`}>
         <Frame />
         {children}

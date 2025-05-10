@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 export default function IntroAnimation({ onComplete }: { onComplete: () => void }) {
   const [stage, setStage] = useState<"initial" | "mic" | "typing" | "complete">("initial")
   const [typedText, setTypedText] = useState("")
-  const fullText = "HEALTH/HEALTH"
+  const fullText = "HH.IO"
 
   useEffect(() => {
     // Inicia a sequência de animação
@@ -42,7 +42,7 @@ export default function IntroAnimation({ onComplete }: { onComplete: () => void 
   }, [onComplete])
 
   return (
-    <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-white flex items-center justify-center z-50 transition-transform transform translate-y-full">
       <div className="flex flex-col items-center">
         {/* Microfone brutalista com ondas de áudio */}
         <div
@@ -87,7 +87,7 @@ export default function IntroAnimation({ onComplete }: { onComplete: () => void 
         {/* Texto digitado */}
         <div
           className={cn(
-            "font-black text-[2.2em] font-mono tracking-tight transition-all duration-500",
+            "font-black text-[1.5em] font-mono tracking-tight transition-all duration-500",
             (stage === "initial" || stage === "mic") && "opacity-0",
             (stage === "typing" || stage === "complete") && "opacity-100",
           )}
