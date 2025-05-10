@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/hhio-landing',
+  assetPrefix: '/hhio-landing/',
+  trailingSlash: true,
 }
 
 export default nextConfig
