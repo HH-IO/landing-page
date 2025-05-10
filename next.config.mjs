@@ -12,6 +12,7 @@ const nextConfig = {
   basePath: '/hhio-landing',
   assetPrefix: '/hhio-landing/',
   trailingSlash: true,
+  distDir: 'out',
 }
 
 export default nextConfig
