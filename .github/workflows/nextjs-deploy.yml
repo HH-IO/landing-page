@@ -48,7 +48,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build with Next.js
-        run: pnpm build
+        run: pnpm next build
+      - name: Prepare output directory
+        run: mkdir -p out && cp -r .next out/_next && cp -r public/* out/
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
