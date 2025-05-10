@@ -301,9 +301,6 @@ export default function Home() {
                         </Button>
                       </div>
                     </div>
-                    <Button className="bg-black text-white hover:bg-black/90 rounded-none font-mono font-bold text-[0.8em] py-[0.8em] px-[1.5em] shadow-[2px_2px_0px_0px_rgba(0,0,0,0.15)]">
-                      VER TODAS AS VAGAS
-                    </Button>
                   </div>
                   <div className="bg-black/5 p-[1.5em] border border-black backdrop-blur-2xl shadow-[2px_2px_0px_0px_rgba(0,0,0,0.1)]">
                     <h4 className="text-[1.2em] font-black mb-[1em] font-mono">NOSSO STACK TECNOLÓGICO</h4>
@@ -386,24 +383,6 @@ export default function Home() {
               </TabsContent>
             </div>
           </Tabs>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-[8%]">
-          <div className="w-[92%] mx-auto">
-            <div className="max-w-[90%] mx-auto text-center">
-              <h2 className="text-[1.6em] md:text-[2em] font-black mb-[1em] font-mono">
-                HEALTH/HEALTH não é uma IA de reunião. É uma extensão do seu raciocínio clínico.
-              </h2>
-              <p className="text-[0.9em] text-black/70 mb-[2em] font-body">
-                Junte-se aos profissionais de saúde que estão transformando sua prática clínica com documentação
-                automática e inteligente.
-              </p>
-              <Button className="bg-black text-white hover:bg-black/90 text-[0.8em] px-[1.3em] py-[0.9em] rounded-none flex items-center gap-[0.5em] mx-auto font-bold font-mono shadow-[2px_2px_0px_0px_rgba(0,0,0,0.15)]">
-                SOLICITAR DEMONSTRAÇÃO <ArrowRight className="w-[0.9em] h-[0.9em]" />
-              </Button>
-            </div>
-          </div>
         </section>
       </main>
 
